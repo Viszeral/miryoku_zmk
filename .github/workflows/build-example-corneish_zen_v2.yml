@@ -1,0 +1,15 @@
+# Copyright 2022 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+name: 'Build Example corneish_zen_v2'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["corneish_zen_v2_left","corneish_zen_v2_right"]'
+      alphas: '["qwerty"]'
+      custom_config: '["#define MIRYOKU_KLUDGE_MOUSEKEYSPR\n#define MIRYOKU_TAP=QWERTY\n#define MIRYOKU_EXTRA=COLEMAKDKH"]'
+      kconfig: '["CONFIG_ZMK_MOUSE=y\nCONFIG_ZMK_DISPLAY_HIDE_MOMENTARY_LAYERS=y\nCONFIG_CUSTOM_WIDGET_LOGO_IMAGE_MIRYOKU=y"]'
+      branches: '["caksoylar/zmk/caksoylar/zen-v2 zmkfirmware/zmk/main ftc/zmk/mouse-ftc"]'
