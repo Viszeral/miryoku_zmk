@@ -13,7 +13,7 @@
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
 &kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
 &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-U_NP,              U_NP,              &kp N1,            &kp SPACE,         &kp RET,           &kp N2,            &kp N3,            &kp N4,            U_NP,              U_NP
+U_NP,              U_NP,              &kp N1,            &kp SPACE,         &kp N3,            &kp N2,            &kp N3,            &kp N4,            U_NP,              U_NP
 
 #define MIRYOKU_LAYOUTMAPPING_CORNE( \
      K00, K01, K02, K03, K04,      K05, K06, K07, K08, K09, \
@@ -22,7 +22,7 @@ U_NP,              U_NP,              &kp N1,            &kp SPACE,         &kp 
      N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 ) \
 &kp ESC K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  &to U_GAME \
-XXX     K10  K11  K12  K13  K14       K15  K16  K17  K18  K19  XXX \
+&kp RET K10  K11  K12  K13  K14       K15  K16  K17  K18  K19  XXX \
 &kp TAB K20  K21  K22  K23  K24       K25  K26  K27  K28  K29 &to U_BASE \
                       K32  K33  K34       K35  K36  K37
 
